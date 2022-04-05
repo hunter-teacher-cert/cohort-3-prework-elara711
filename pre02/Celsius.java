@@ -5,19 +5,23 @@ public class Celsius {
 public static void main(String[] args){
 
 
- System.out.println("Start");
+System.out.println("Start");
   
 // Exercise 2   Write a program that converts a temperature from Celsius to Fahrenheit.
-  
-  
+    
 //(1) prompt the user for input
-    final double CON_MULTIPLE=9/5;
+    final double CON_MULTIPLE=2;
     final int CON_CONSTANT=32; // 
-    int cels; // celsius variable 
+    double cels; // celsius variable 
     double fahr; // fahrenheit variable
     Scanner in = new Scanner(System.in);
   
+    
 
+  
+    
+    
+  
         //System.out.print("Type something: ");
         //line = in.nextLine();
         //System.out.println("You said: " + line);
@@ -28,6 +32,18 @@ public static void main(String[] args){
  
   
 //(2) read a double value from the keyboard, 
+  System.out.print("Enter a Celsius value ");
+  cels = in.nextInt();
+
+
+
+ 
+  System.out.println("Celsius="+cels);
+  System.out.println("cels*CON_MULTIPLE="+cels*CON_MULTIPLE);
+  fahr=CON_CONSTANT+(cels * CON_MULTIPLE);
+  
+  System.out.println(fahr);
+  
   
 // (3) calculate the result, and 
   
