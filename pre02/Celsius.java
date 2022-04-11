@@ -20,12 +20,19 @@ public static void main(String[] args){
   //(2) read a double value from the keyboard, 
   System.out.print("Enter a Celsius value ");
   cels = in.nextInt();
+
+// Add section with if..else statement
   
-  // display Celsius and Con_Multiple values
-  //System.out.println("Celsius="+cels+".  Multiple ="+CON_MULTIPLE); 
-  //System.out.println();
+  if (cels<50) {
+  System.out.println("The Celsius value you entered is less than 50="+cels);
+    // codes in if block go here
+    }
+  else  {
+  System.out.println("The Celsius value you entered is more than 50 ="+cels);
+    //else block go here
+  }
+    
   
- 
   
   // (3) calculate the result, and 
   fahr=CON_CONSTANT+(cels * CON_MULTIPLE);
@@ -33,8 +40,14 @@ public static void main(String[] args){
   
   //(4) format the output to one decimal place. For example, it should display "24.0 C = 75.2 F"
   
+  System.out.println("Celsius ="+cels);
+  System.out.printf("Celsius floating point = %f \n",cels);
+  System.out.printf("Celsius floating point 3 decimals = %.3f \n",cels);
+  System.out.printf("Celsius floating point 0 decimals= %.0f \n",cels);
+  
+  
   System.out.println("Fahrenheit equivalent ="+fahr);
-
+  
 
 
 
