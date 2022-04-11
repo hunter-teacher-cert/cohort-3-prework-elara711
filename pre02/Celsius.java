@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class Celsius {
 public static void main(String[] args){
 
-  
+
+   
 // Exercise 2   Write a program that converts a temperature from Celsius to Fahrenheit.
     
 
@@ -33,7 +34,6 @@ public static void main(String[] args){
   }
     
   
-  
   // (3) calculate the result, and 
   fahr=CON_CONSTANT+(cels * CON_MULTIPLE);
   
@@ -45,13 +45,9 @@ public static void main(String[] args){
   System.out.printf("Celsius floating point 3 decimals = %.3f \n",cels);
   System.out.printf("Celsius floating point 0 decimals= %.0f \n",cels);
   
-  
   System.out.println("Fahrenheit equivalent ="+fahr);
-  
 
-
-
- System.out.println("C O N V E R S I O N Complete");
+  System.out.println("C O N V E R S I O N Complete");
   
     }
 }
