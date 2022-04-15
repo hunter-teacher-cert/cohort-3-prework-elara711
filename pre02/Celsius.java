@@ -11,7 +11,7 @@ public static void main(String[] args){
 
     final double CON_MULTIPLE=9.0/5.0;
     final double CON_CONSTANT=32; // 
-    double cels; // celsius variable 
+    double cels; // celsius variable s
     double fahr; // fahrenheit variable
   
   //(1) prompt the user for input  
