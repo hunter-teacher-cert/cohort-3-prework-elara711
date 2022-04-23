@@ -1,9 +1,9 @@
 /** Author: Erwin Lara
-  This code will use two matrices 
-  display the elements of each matrix
-  and add them together
-  then output/display the result to the screen.
-    */
+  This code will use two 5x5 matrices that the user will enter values for. 
+  The code will clear the console at the beginning of every task to keep
+  the console clutter down. Then, the two matrices will be added. The two matrices
+  will be displayed and then the sum will follow. */
+
 
 import java.util.*;
 import java.util.Scanner;
