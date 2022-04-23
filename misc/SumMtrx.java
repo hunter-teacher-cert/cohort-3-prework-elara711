@@ -9,20 +9,68 @@ import java.util.*;
 import java.util.Scanner;
 
 public class SumMtrx {
+
+  public static void clearScreen()
+    {
+      System.out.print("\033[H\033[2J");
+      System.out.flush();
+    }
+
+  
     public static void main(String[] args) {
     int row = 5, col = 5;
-    int[][] oneMatrix = {{1,2,3,4,5},{6,7,8,9,10},{1,2,3,4,5},{6,7,8,9,10},{1,2,3,4,5}};
-    int[][] twoMatrix = {{-1,-2,-3,-4,-5},{-6,-7,-8,-9,-10},{-1,-2,-3,-4,-5},{-6,-7,-8,-9,-10},{-1,-2,-3,-4,-5}};
-      
- 
+    int[][] oneMatrix = new int[5][5];
+    int[][] twoMatrix = new int[5][5];
 
-// Show the result on screen
+
+clearScreen();
+
+      
+// Get new values from user for oneMatrix
+    int entry=0;
+    for (int i=0; i<row; i++)
+    {
+      for (int j=0; j< col; j++)
+        {
+        // get entry from user
+        Scanner in = new Scanner(System.in);
+          System.out.print("Assign value for Matrix A");
+          System.out.print("(row,column):("+i+","+j+")=>");
+          entry = in.nextInt();
+          oneMatrix[i][j]=entry;  
+        }
+      System.out.println();
+    }
+
+clearScreen();
+      
+// Get new values from user for twoMatrix
+    
+      entry=0;
+    for (int i=0; i<row; i++)
+    {
+      for (int j=0; j< col; j++)
+        {
+        // get entry from user
+        Scanner in = new Scanner(System.in);
+          System.out.print("   Assign value for Matrix B");
+          System.out.print("(row,column):("+i+","+j+")=>");
+          entry = in.nextInt();
+          twoMatrix[i][j]=entry;  
+        }
+    System.out.println();  
+    }
+
+clearScreen();
+
+      
+// Show the default state of the two matrices result on screen
     System.out.println("The elements of the first Matrix is ");
       for (int i=0; i < row; i++)
       {     
         for (int j=0; j < col; j++)
         {
-      System.out.print(oneMatrix[i][j]+"  ");    
+        System.out.print(oneMatrix[i][j]+"  ");    
         }
       System.out.println();  
       }
@@ -33,11 +81,10 @@ public class SumMtrx {
       {     
         for (int j=0; j < col; j++)
         {
-      System.out.print(twoMatrix[i][j]+"  ");    
+        System.out.print(twoMatrix[i][j]+"  ");    
         }
       System.out.println();  
       }
-
 
       
     // Combine Matrices by Addition
